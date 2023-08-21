@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const Card1 = () => {
+const Card  = (product,img, alt) => () => {
   const [features, setFeatures] = useState(null);
   const [feature,setFeature] = useState(null);
   const [audio, setAudio] = useState(null);
@@ -16,7 +16,7 @@ const Card1 = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ product: "React" })
+        body: JSON.stringify({ product })
       });
       const docs = await response.json();
       setFeatures(docs.data);
@@ -61,14 +61,14 @@ const Card1 = () => {
       <div className="container">
         <div className=" flex flex-row pb-8 border-b-2 border-slate-800">
           <Image
-            src="/react-black.svg"
-            alt="React Logo"
+            src={img}
+            alt={alt}
             className="mr-4"
             width={80}
             height={80}
             priority
           />
-          <h2 className="text-8xl font-bold text-slate-900">React</h2>
+          <h2 className="text-8xl font-bold text-slate-900">{product}</h2>
         </div>
 
         <div className=" mt-24 flex flex-row">
@@ -109,4 +109,4 @@ const Card1 = () => {
   );
 };
 
-export default Card1;
+export default Card;
