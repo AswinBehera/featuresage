@@ -8,18 +8,7 @@ import { LLMChain } from "langchain/chains";
 import { StructuredOutputParser, OutputFixingParser } from "langchain/output_parsers";
 
 const model = new OpenAI({ temperature: 0 });
-// const parser = StructuredOutputParser.fromZodSchema(
-//     z.object({
-//         Title : z.string().describe("Name of Episode"),
-//         Transcript : z.array(
-//             z.object({
-//                 Host: z.string().describe("Host's script"),
-//                 Guest: z.string().describe("Guest's script")
-//             })
-//         ).describe("Transcript Array")
-//       })
-//   );
-// const outputFixingParser = OutputFixingParser.fromLLM(model, parser);
+
 
 const parser = StructuredOutputParser.fromNamesAndDescriptions({
     Episode: "Name of podcast",

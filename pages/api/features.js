@@ -22,7 +22,7 @@ const outputFixingParser = OutputFixingParser.fromLLM(model, parser);
 export default async function  handler(req, res) {
   const { product } = req.body
 
- 
+
   const prompt = new PromptTemplate({
     template:`
     {format_instructions}
