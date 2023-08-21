@@ -64,7 +64,7 @@ export default function Home() {
         <div className="mb-32 flex text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
           <a
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            className="group mr-8 rounded-lg border border-transparent px-5 py-4 transition-colors bg-white border-slate-400 hover:border-gray-300 hover:bg-indigo-200 "
+            className="group mr-8 rounded-lg border border-transparent px-5 py-4 transition-colors bg-white border-indigo-300 hover:border-gray-300 hover:bg-indigo-200 "
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -89,7 +89,7 @@ export default function Home() {
 
           <a
             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            className=" group mr-8 rounded-lg border border-transparent px-5 py-4 transition-colors bg-white border-slate-400 hover:border-gray-300 hover:bg-indigo-200"
+            className=" group mr-8 rounded-lg border border-transparent px-5 py-4 transition-colors bg-white border-indigo-300 hover:border-gray-300 hover:bg-indigo-200"
             target="_blank"
             rel="noopener noreferrer"
           >
