@@ -62,54 +62,54 @@ export default function Home() {
         <h3 className="text-4xl font-bold my-12">Our Latest Endeavours</h3>
 
         <div className="mb-32 flex text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            className="group mr-8 rounded-lg border border-transparent px-5 py-4 transition-colors bg-white border-indigo-300 hover:border-gray-300 hover:bg-indigo-200 "
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/react.png"
-              alt="react logo"
-              className=" mb-8 mx-auto"
-              width={128}
-              height={128}
-            />
-            <h2 className={`mb-3 text-2xl font-semibold`}>
-              React{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
-            </h2>
-            <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-              React is a free and open-source front-end JavaScript library for
-              building user interfaces based on components
-            </p>
-          </a>
+          <Link href="/card1" legacyBehavior>
+            <a
+              className="group mr-8 rounded-lg border border-transparent px-5 py-4 transition-colors bg-white border-indigo-400 hover:border-gray-300 hover:bg-indigo-200 "
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/react.png"
+                alt="react logo"
+                className=" mb-8 mx-auto"
+                width={128}
+                height={128}
+              />
+              <h2 className={`mb-3 text-2xl font-semibold`}>
+                React{" "}
+                <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                  -&gt;
+                </span>
+              </h2>
+              <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+                React is a free and open-source front-end JavaScript library for
+                building user interfaces based on components
+              </p>
+            </a>
+          </Link>
 
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            className=" group mr-8 rounded-lg border border-transparent px-5 py-4 transition-colors bg-white border-indigo-300 hover:border-gray-300 hover:bg-indigo-200"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/godot.png"
-              alt="godot logo"
-              className="mb-8 mx-auto"
-              width={128}
-              height={128}
-            />
-            <h2 className={`mb-3 text-2xl font-semibold`}>
-              Godot{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
-            </h2>
-            <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-              Godot is a cross-platform, free and open-source game engine.
-            </p>
-          </a>
+          <Link href="/card2" legacyBehavior>
+            <a
+              className=" group mr-8 rounded-lg border border-transparent px-5 py-4 transition-colors bg-white border-indigo-400 hover:border-gray-300 hover:bg-indigo-200"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/godot.png"
+                alt="godot logo"
+                className="mb-8 mx-auto"
+                width={128}
+                height={128}
+              />
+              <h2 className={`mb-3 text-2xl font-semibold`}>
+                Godot{" "}
+                <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                  -&gt;
+                </span>
+              </h2>
+              <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+                Godot is a cross-platform, free and open-source game engine.
+              </p>
+            </a>
+          </Link>
         </div>
       </div>
     </main>
